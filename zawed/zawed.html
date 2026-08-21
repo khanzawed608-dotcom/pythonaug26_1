@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration & Login Form</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* Top Login Form Box */
+        .login-box {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            padding: 25px;
+            width: 450px;
+            margin: 0 auto 30px auto;
+        }
+        .login-box h2 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+        .login-box table td {
+            padding: 4px 6px;
+        }
+
+        /* Bottom Student Registration Form Box */
+        .registration-box {
+            background-color: #00ffff;
+            padding: 25px;
+            width: 550px;
+            margin: 0 auto;
+            border: 1px solid #00cccc;
+        }
+        .header-title {
+            border: 1px solid #333;
+            text-align: center;
+            padding: 10px;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            background-color: transparent;
+        }
+        .registration-box table {
+            width: 100%;
+        }
+        .registration-box table td {
+            padding: 5px 4px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+        }
+        .registration-box input[type="text"],
+        .registration-box input[type="email"],
+        .registration-box select {
+            padding: 2px 4px;
+        }
+        .dob-input {
+            width: 45px;
+        }
+        .dob-year {
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Login Form -->
+    <div class="login-box">
+        <h2>Login form using HTML and CSS</h2>
+        <p><strong>Sign in</strong></p>
+        <p style="font-size: 13px; color: #444;">Sign in with your username and password</p>
+        
+        <form>
+            <table>
+                <tr>
+                    <td><label for="uname">Your username</label></td>
+                    <td><input type="text" id="uname" placeholder="Enter Username"></td>
+                </tr>
+                <tr>
+                    <td><label for="pwd">Your password</label></td>
+                    <td><input type="password" id="pwd" placeholder="Enter Password"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Login"></td>
+                </tr>
+            </table>
+        </form>
+        <p style="font-size: 13px; margin-top: 15px;">
+            Not a member? <a href="#" style="color: purple;">Register here!</a>
+        </p>
+    </div>
+
+    <!-- 2. Student Registration Form -->
+    <div class="registration-box">
+        <div class="header-title">
+            Student Registration Form
+        </div>
+
+        <form>
+            <table>
+                <tr>
+                    <td>Name :</td>
+                    <td><input type="text" placeholder="Enter full name" style="width: 200px;"></td>
+                </tr>
+                <tr>
+                    <td>Father's Name :</td>
+                    <td><input type="text" style="width: 200px;"></td>
+                </tr>
+                <tr>
+                    <td>Mother's Name :</td>
+                    <td><input type="text" style="width: 200px;"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number :</td>
+                    <td><input type="text" placeholder="017xxxxxxxxx" style="width: 200px;"></td>
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td><input type="email" placeholder="sample@example.com" style="width: 200px;"></td>
+                </tr>
+                <tr>
+                    <td>Gender :</td>
+                    <td>
+                        <input type="radio" name="gender" id="m"> <label for="m">Male</label>
+                        <input type="radio" name="gender" id="f"> <label for="f">Female</label>
+                        <input type="radio" name="gender" id="o"> <label for="o">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth :</td>
+                    <td>
+                        <input type="text" class="dob-input"> - 
+                        <input type="text" class="dob-input"> - 
+                        <input type="text" class="dob-year"> 
+                        <span style="font-style: italic; font-weight: normal; font-size: 12px;">(dd-mm-yyyy)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address :</td>
+                    <td><input type="text" placeholder="Street:- House:- Road:-" style="width: 320px;"></td>
+                </tr>
+                <tr>
+                    <td>Blood Group :</td>
+                    <td>
+                        <select>
+                            <option>Select</option>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Department :</td>
+                    <td>
+                        <input type="radio" name="dept" id="cse"> <label for="cse">CSE</label>
+                        <input type="radio" name="dept" id="eee"> <label for="eee">EEE</label>
+                        <input type="radio" name="dept" id="bba"> <label for="bba">BBA</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Course :</td>
+                    <td>
+                        <input type="checkbox" id="c"> <label for="c">C</label>
+                        <input type="checkbox" id="cpp"> <label for="cpp">C++</label>
+                        <input type="checkbox" id="java"> <label for="java">Java</label>
+                        <input type="checkbox" id="ai"> <label for="ai">AI</label>
+                        <input type="checkbox" id="ml"> <label for="ml">Machine learning</label>
+                        <input type="checkbox" id="rob"> <label for="rob">Robotics</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Photo :</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding-top: 15px;">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>
+    
+</body>
+</html>
