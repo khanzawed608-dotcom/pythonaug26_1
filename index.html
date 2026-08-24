@@ -3,142 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>About Victoria Kirst</title>
-
-    <style>
-        body {
-            background-color: #1e1e1e;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 30px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-        }
-
-        h1 {
-            color: #b7cbed;
-            font-size: 45px;
-            letter-spacing: 2px;
-        }
-
-        h2 {
-            color: #b7cbed;
-            font-size: 24px;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        .highlight {
-            color: #d8d58b;
-            font-weight: bold;
-        }
-
-        hr {
-            border: none;
-            border-top: 1px solid #777;
-            margin: 20px 0;
-        }
-
-        li {
-            margin: 7px 0;
-        }
-
-        a {
-            color: #c75c5c;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .movies {
-            font-style: italic;
-        }
-
-        .moods {
-            display: flex;
-            align-items: flex-end;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .mood-box {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .mood-box img {
-            width: 250px;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 15px;
-            }
-
-            h1 {
-                font-size: 35px;
-            }
-
-            .moods {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .mood-box img {
-                width: 100%;
-                max-width: 350px;
-            }
-        }
-    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form Design</title>
 </head>
 
 <body>
 
-    <div class="container">
+    <h1>Basic form design using HTML</h1>
 
-        <h1>About Victoria Kirst</h1>
+    <form>
 
-        <p>
-            My name is Victoria and I am
-            <span class="highlight">jolly</span>,
-            <span class="highlight">clumsy</span>, and
-            <span class="highlight">four-eyed</span>.
-        </p>
+        <fieldset>
+            <legend>Personal Details</legend>
 
-        <hr>
+            <br>
 
-        <h2>My Classes This Quarter</h2>
+            <label>First name :</label>
+            <input type="text" name="firstname">
 
-        <ul>
-            <li>CSE 451 - Operating Systems</li>
-            <li>CSE 471 - Computer Design and Organization</li>
-            <li>PHYS 121 - Mechanics</li>
-            <li>CSE 498 - Research w/ Prof. Luis Ceze</li>
-        </ul>
+            <br><br>
 
+            <label>Last name :</label>
+            <input type="text" name="lastname">
 
-        <h2>My Favorite Movies</h2>
+            <br><br>
 
-        <p class="movies">
-            (I actually don't watch too many movies, so...here goes!)
-        </p>
+            <label>Gender :</label>
 
-        <ol>
-            <li>
-                The last 30 minutes of Forrest Gump
-                <a href="#">(IMDB)</a>
-            </li>
+            <input type="radio" name="gender" value="male">
+            <label>Male</label>
 
-            <li>
-                Star Trek Episode
+            <input type="radio" name="gender" value="female">
+            <label>Female</label>
+
+            <br><br>
+
+            <label>Email :</label>
+            <input type="email" name="email">
+
+            <br><br>
+
+            <label>Date of Birth :</label>
+            <input type="date" name="dob">
+
+            <br><br>
+
+            <label>Address :</label>
+
+            <br>
+
+            <textarea name="address" rows="5" cols="40"></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
+    
+</body>
+</html>
 
     
 
@@ -146,6 +81,4 @@
 
 
 
-</body>
-
-</html>
+<
