@@ -1,0 +1,19 @@
+* {
+    
+}
+
+.box {
+    width: 150px;
+    background-color: blue;
+    border: 10px solid red;
+    padding: 20px 30px;
+    margin: 20px 30px 40px 30px;
+}
+
+.img-container{
+    width: 60px;
+    height: 30px;
+    border: 1px solid black;
+    background-image: urlhttps(//marketplace.canva.com/xHPJk/MAHA8XxHPJk/1/tl/canva-MAHA8XxHPJk.jpg;https://marketplace.canva.com/xHPJk/MAHA8XxHPJk/1/tl/canva-MAHA8XxHPJk.jpg);
+    background-size
+}
