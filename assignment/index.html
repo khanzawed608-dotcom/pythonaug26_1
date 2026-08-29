@@ -1,59 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Do and Don't Form</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Card Design</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #eeeeee;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Card */
+        .card {
+            width: 650px;
+            background-color: white;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Image Section */
+        .image-box {
+            height: 390px;
+            background-color: #a9e8c8;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-icon {
+            font-size: 75px;
+            opacity: 0.5;
+        }
+
+        /* Content */
+        .content {
+            padding: 35px 40px 30px;
+        }
+
+        /* Label */
+        .label {
+            display: inline-block;
+            background-color: #c9c9ce;
+            color: #333;
+
+            font-size: 20px;
+            font-weight: bold;
+
+            padding: 12px 45px;
+            border-radius: 18px;
+
+            margin-bottom: 20px;
+        }
+
+        /* Heading */
+        h1 {
+            font-size: 45px;
+            color: #111;
+            margin-bottom: 18px;
+        }
+
+        /* Description */
+        p {
+            font-size: 25px;
+            line-height: 1.4;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        /* Button */
+        button {
+            width: 100%;
+            height: 70px;
+
+            border: none;
+            border-radius: 40px;
+
+            background-color: #4775e8;
+            color: white;
+
+            font-size: 27px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #315fd5;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            .card {
+                width: 90%;
+            }
+
+            .image-box {
+                height: 280px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            button {
+                height: 60px;
+                font-size: 22px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <div class="container">
+    <div class="card">
 
-        <!-- DO -->
-        <div class="section">
-            <h1>DO:</h1>
-
-            <div class="form-box">
-                <label>Name</label>
-                <input type="text" placeholder="Name">
-
-                <label>Email</label>
-                <input type="email" placeholder="Email">
-
-                <label>Company</label>
-                <input type="text" placeholder="Company">
-            </div>
+        <div class="image-box">
+            <div class="image-icon">🖼️</div>
         </div>
 
-        <!-- DON'T -->
-        <div class="section">
-            <h1>DON’T:</h1>
+        <div class="content">
 
-            <div class="form-box">
-                <label>Name</label>
-                <input type="text" placeholder="Name">
+            <span class="label">Label</span>
 
-                <label>Email</label>
-                <input type="email" placeholder="Email">
+            <h1>Heading</h1>
 
-                <label>Company</label>
-                <input type="text" placeholder="Company">
-            </div>
+            <p>
+                This is a short description about
+                the card.
+            </p>
+
+            <button>Action</button>
+
         </div>
 
     </div>
 
-</body>
-</html>
-  
 </body>
 </html>
