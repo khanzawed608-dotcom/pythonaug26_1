@@ -1,118 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Framed Photo</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #1a1a1a;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    }
-
-    /* Outer Black/Dark Charcoal Picture Frame */
-    .frame {
-      background-color: #2b282b;
-      padding: 38px 32px;
-      border-radius: 4px;
-      box-shadow: 
-        0 15px 35px rgba(0, 0, 0, 0.6),
-        inset 0 2px 4px rgba(255, 255, 255, 0.15),
-        inset 0 -2px 4px rgba(0, 0, 0, 0.4);
-      display: inline-block;
-    }
-
-    /* Inner White Mat Board */
-    .mat-board {
-      background-color: #ffffff;
-      padding: 24px 20px;
-      box-shadow: 
-        inset 0 3px 6px rgba(0, 0, 0, 0.35),
-        0 1px 2px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Photo Container */
-    .photo-wrapper {
-      position: relative;
-      width: 240px;
-      height: 340px;
-      overflow: hidden;
-      box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.25);
-    }
-
-    .photo-wrapper img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      filter: grayscale(100%) contrast(105%);
-    }
-
-    /* 5x7 Overlay Badge */
-    .badge {
-      position: absolute;
-      top: 38%;
-      right: 12px;
-      width: 110px;
-      padding: 10px 8px;
-      background: rgba(30, 30, 30, 0.55);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
-      color: #ffffff;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .badge-size {
-      font-size: 28px;
-      font-weight: 300;
-      letter-spacing: 1px;
-      line-height: 1;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-    }
-
-    .badge-divider {
-      height: 1px;
-      background-color: #d19a7e;
-      margin: 6px auto;
-      width: 90%;
-    }
-
-    .badge-brand {
-      font-size: 13px;
-      font-weight: 400;
-      letter-spacing: 0.5px;
-      color: #eaeaea;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do and Don't Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="frame">
-    <div class="mat-board">
-      <div class="photo-wrapper">
-        <img 
-          src="https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=800&q=80" 
-          alt="Solitary tree in snow"
-        />
-        <div class="badge">
-          <div class="badge-size">5x7</div>
-          <div class="badge-divider"></div>
-          <div class="badge-brand">Sindcom</div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <div class="container">
 
+        <!-- DO -->
+        <div class="section">
+            <h1>DO:</h1>
+
+            <div class="form-box">
+                <label>Name</label>
+                <input type="text" placeholder="Name">
+
+                <label>Email</label>
+                <input type="email" placeholder="Email">
+
+                <label>Company</label>
+                <input type="text" placeholder="Company">
+            </div>
+        </div>
+
+        <!-- DON'T -->
+        <div class="section">
+            <h1>DON’T:</h1>
+
+            <div class="form-box">
+                <label>Name</label>
+                <input type="text" placeholder="Name">
+
+                <label>Email</label>
+                <input type="email" placeholder="Email">
+
+                <label>Company</label>
+                <input type="text" placeholder="Company">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+  
 </body>
 </html>
