@@ -1,0 +1,29 @@
+h2 {
+    color: blueviolet
+}
+
+h1~p {
+    color: orange;
+}
+
+h1+p {
+    color: green;
+}
+
+input[type="password"] {
+    border: 2px solid blue;
+}
+
+span {
+   
+   height: 50px;
+   width: 150px;
+   background-color: lightblue;
+   height:50px;
+   border: 2px solid blue; 
+   padding: 10px;
+   margin: 10px;
+   display:flex;
+  justify-content: center;
+}
+
