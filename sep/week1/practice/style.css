@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.item{
+    height: 50px;
+    width: 5vw;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+.item1{
+    background-color: red;
+  
+
+}
+
+
+.parent{
+    padding: 20px;
+    height: 110px;
+    width: 410px;
+    margin: 100px;
+    padding: 10px;
+   
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
