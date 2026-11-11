@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin: 50px;
+}
+
+.container {
+    height: 500px;
+    width: 500px;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: magenta;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.box:hover{
+    background-color: gold;
+    
+}
